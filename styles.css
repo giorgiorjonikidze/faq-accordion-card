@@ -1,0 +1,142 @@
+body {
+  width: 100vw;
+  /* height: 100vh; */
+  background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+p:hover {
+  color: orange;
+}
+
+.main-card {
+  width: 327px;
+  /* height: 535px; */
+  background-color: #fff;
+  border-radius: 23px;
+  box-sizing: border-box;
+  padding: 0 24px;
+  margin-top: 145px;
+  margin-bottom: 70px;
+  position: relative;
+  /* display: flex; */
+  padding-bottom: 48px;
+}
+
+.image-wrapper {
+  position: absolute;
+  top: -106px;
+  left: 48px;
+}
+
+.main-image {
+  width: 236px;
+}
+
+.main-image-bg {
+  width: 236px;
+  position: absolute;
+  top: 110px;
+  left: 0px;
+}
+
+.questions-box {
+  margin-top: 132px;
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+}
+
+.header {
+  font-size: 32px;
+  align-self: center;
+}
+
+.question-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question-wrapper p {
+  margin: 18px 0;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.stroke {
+  height: 1px;
+  background-color: #e8e8ea;
+}
+
+.desktop-image-wrapper {
+  position: relative;
+  display: none;
+}
+
+.desktop-main-image-wrapper {
+  width: 472px;
+  height: 359px;
+  position: absolute;
+  top: 75px;
+  left: -25px;
+  overflow: hidden;
+}
+
+.desktop-main-image {
+  height: 359px;
+  width: 472px;
+  position: absolute;
+  left: -73px;
+  z-index: 2;
+}
+
+.desktop-box-image {
+  position: absolute;
+  left: -116px;
+  top: 202px;
+  z-index: 3;
+}
+
+.desktop-image-bg {
+  position: absolute;
+  top: -292px;
+  left: -587px;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 1400px) {
+  .main-card {
+    width: 920px;
+    height: 509px;
+  }
+  .header {
+    align-self: flex-start;
+  }
+  .image-wrapper {
+    display: none;
+  }
+  .questions-box {
+    position: absolute;
+    top: -94px;
+    left: 490px;
+    width: 350px;
+  }
+  .desktop-image-wrapper{
+    display: inline-block;
+  }
+}
